@@ -1,0 +1,12 @@
+
+
+Reveal官网
+https://revealapp.com/updates/
+
+# 另一个实现
+https://github.com/lemon4ex/Reveal2Loader
+https://repo.h4ck1n.com
+
+
+
+

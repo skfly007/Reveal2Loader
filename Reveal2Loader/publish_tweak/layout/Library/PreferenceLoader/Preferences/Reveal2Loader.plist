@@ -1,0 +1,103 @@
+{
+	entry = {
+		cell = PSLinkCell;
+		label = RevealLoader;
+		icon = "reveal-logo.png";
+		items = (
+            {
+                cell = PSSwitchCell;
+                label = "启用";
+                defaults = "com.skfly.RHRevealLoader";
+                default = 0;
+                key = Enable;
+                id = Enable;
+            },
+			{
+				bundle = AppList;
+				isController = 1;
+				cell = PSLinkCell;
+				label = "Enabled Applications";
+				ALSettingsPath = "/var/mobile/Library/Preferences/com.skfly.RHRevealLoader.plist";
+				ALSettingsKeyPrefix = "RHRevealEnabled-";
+				"ALSettingsDefaultValue" = "";
+				ALAllowsSelection = 1;
+				ALSectionDescriptors = (
+					{
+						items = ();
+						"footer-title" = "Select which applications to load Reveal into.";
+					},
+					{
+						title = "User Applications";
+						predicate = "isSystemApplication = FALSE";
+						"icon-size" = 29;
+						"suppress-hidden-apps" = 1;
+						"cell-class-name" = ALSwitchCell;
+					},
+					{
+						title = "System Applications";
+						predicate = "isSystemApplication = TRUE AND NOT (displayIdentifier IN {'com.iptm.bigboss.sbsettings', 'com.booleanmagic.overboard', 'eu.heinelt.ifile'})";
+						"icon-size" = 29;
+						"suppress-hidden-apps" = 1;
+						"cell-class-name" = ALSwitchCell;
+					},
+				);
+			},
+			{
+				bundle = "ExtensionListSettings";
+				isController = 1;
+				cell = PSLinkCell;
+				label = "Avaliable Extensions";
+				ALSettingsPath = "/var/mobile/Library/Preferences/com.skfly.RHRevealLoader.plist";
+				ALSettingsKeyPrefix = "RHRevealEnabled-";
+				"ALSettingsDefaultValue" = "";
+				ALAllowsSelection = 1;
+				ALSectionDescriptors = (
+					{
+						items = ();
+						"footer-title" = "Select which Plugins to load Reveal into.";
+					},
+					{
+						title = "Custom Keyboard";
+						predicate = "protocol contains 'keyboard-service'";
+						"icon-size" = 29;
+						"cell-class-name" = ELSwitchCell;
+					},
+					{
+						title = "share Extensions";
+						predicate = "protocol contains 'share-services'";
+						"icon-size" = 29;
+						"cell-class-name" = ELSwitchCell;
+					},
+					{
+						title = "AppleWatch App";
+						predicate = "protocol contains 'watchkit'";
+						"icon-size" = 29;
+						"cell-class-name" = ELSwitchCell;
+					},
+					{
+						title = "Today Extensions";
+						predicate = "protocol contains 'widget-extension'";
+						"icon-size" = 29;
+						"cell-class-name" = ELSwitchCell;
+					},
+					{
+						title = "Action Extensions";
+						predicate = "protocol contains 'ui-services'";
+						"icon-size" = 29;
+						"cell-class-name" = ELSwitchCell;
+					},
+					{
+						title = "PhotoEditing Extensions";
+						predicate = "protocol contains 'photo-editing'";
+						"icon-size" = 29;
+						"cell-class-name" = ELSwitchCell;
+					},
+				);
+			},
+			{
+				cell = PSGroupCell;
+				footerText = "UI分析利器.";
+			},
+		);
+	};
+}

@@ -7,46 +7,654 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C91FD47B221B45D20089920A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C91FD47A221B45D20089920A /* Foundation.framework */; };
-		C91FD48F221B45D30089920A /* Reveal2Loader.h in Headers */ = {isa = PBXBuildFile; fileRef = C91FD48E221B45D30089920A /* Reveal2Loader.h */; };
-		C91FD491221B45D30089920A /* Reveal2Loader.m in Sources */ = {isa = PBXBuildFile; fileRef = C91FD490221B45D30089920A /* Reveal2Loader.m */; };
+		4305E27726DA9D10006B091E /* QQ20190321-000639@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4305E1E426DA9D0F006B091E /* QQ20190321-000639@2x.png */; };
+		4305E27826DA9D10006B091E /* QQ20190321-002625@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4305E1E526DA9D0F006B091E /* QQ20190321-002625@2x.png */; };
+		4305E27926DA9D10006B091E /* QQ20190219-050112@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4305E1E626DA9D0F006B091E /* QQ20190219-050112@2x.png */; };
+		4305E27A26DA9D10006B091E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4305E1E926DA9D0F006B091E /* Assets.xcassets */; };
+		4305E27B26DA9D10006B091E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4305E1EA26DA9D0F006B091E /* ViewController.m */; };
+		4305E27C26DA9D10006B091E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4305E1EB26DA9D0F006B091E /* SceneDelegate.m */; };
+		4305E27D26DA9D10006B091E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4305E1EC26DA9D0F006B091E /* LaunchScreen.storyboard */; };
+		4305E27E26DA9D10006B091E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4305E1EE26DA9D0F006B091E /* Main.storyboard */; };
+		4305E27F26DA9D10006B091E /* fakeroot in Resources */ = {isa = PBXBuildFile; fileRef = 4305E1F226DA9D0F006B091E /* fakeroot */; };
+		4305E28026DA9D10006B091E /* .stamp in Resources */ = {isa = PBXBuildFile; fileRef = 4305E1F526DA9D0F006B091E /* .stamp */; };
+		4305E28126DA9D10006B091E /* skflyrevealloader.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4305E1F626DA9D0F006B091E /* skflyrevealloader.dylib */; };
+		4305E28226DA9D10006B091E /* Reveal2Loader.m.f99f8cbe.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 4305E1F826DA9D0F006B091E /* Reveal2Loader.m.f99f8cbe.o */; };
+		4305E28326DA9D10006B091E /* Reveal2Loader.m.f99f8cbe.Td in Resources */ = {isa = PBXBuildFile; fileRef = 4305E1F926DA9D0F006B091E /* Reveal2Loader.m.f99f8cbe.Td */; };
+		4305E28426DA9D10006B091E /* skflyrevealloader.dylib.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 4305E1FA26DA9D0F006B091E /* skflyrevealloader.dylib.dSYM */; };
+		4305E28526DA9D10006B091E /* NSString+Skfly.m.f99f8cbe.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 4305E20626DA9D0F006B091E /* NSString+Skfly.m.f99f8cbe.o */; };
+		4305E28626DA9D10006B091E /* SkflyUIViewHelper.m.f99f8cbe.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 4305E20726DA9D0F006B091E /* SkflyUIViewHelper.m.f99f8cbe.o */; };
+		4305E28726DA9D10006B091E /* TKToast.m.f99f8cbe.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 4305E20826DA9D0F006B091E /* TKToast.m.f99f8cbe.o */; };
+		4305E28826DA9D10006B091E /* SkflyProcessHelper.m.f99f8cbe.Td in Resources */ = {isa = PBXBuildFile; fileRef = 4305E20926DA9D0F006B091E /* SkflyProcessHelper.m.f99f8cbe.Td */; };
+		4305E28926DA9D10006B091E /* TKToast.m.f99f8cbe.Td in Resources */ = {isa = PBXBuildFile; fileRef = 4305E20A26DA9D0F006B091E /* TKToast.m.f99f8cbe.Td */; };
+		4305E28A26DA9D10006B091E /* SkflyUtility.m.f99f8cbe.Td in Resources */ = {isa = PBXBuildFile; fileRef = 4305E20B26DA9D0F006B091E /* SkflyUtility.m.f99f8cbe.Td */; };
+		4305E28B26DA9D10006B091E /* PhotoView.m.f99f8cbe.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 4305E20C26DA9D0F006B091E /* PhotoView.m.f99f8cbe.o */; };
+		4305E28C26DA9D10006B091E /* SkflyUIViewHelper.m.f99f8cbe.Td in Resources */ = {isa = PBXBuildFile; fileRef = 4305E20D26DA9D0F006B091E /* SkflyUIViewHelper.m.f99f8cbe.Td */; };
+		4305E28D26DA9D10006B091E /* PhotoView.m.f99f8cbe.Td in Resources */ = {isa = PBXBuildFile; fileRef = 4305E20E26DA9D0F006B091E /* PhotoView.m.f99f8cbe.Td */; };
+		4305E28E26DA9D10006B091E /* SkflyNetworkHelper.m.f99f8cbe.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 4305E20F26DA9D0F006B091E /* SkflyNetworkHelper.m.f99f8cbe.o */; };
+		4305E28F26DA9D10006B091E /* 越狱后可用的函数.m.f99f8cbe.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 4305E21026DA9D0F006B091E /* 越狱后可用的函数.m.f99f8cbe.o */; };
+		4305E29026DA9D10006B091E /* SkflyJailbreakApiForSandboxApp.m.f99f8cbe.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 4305E21126DA9D0F006B091E /* SkflyJailbreakApiForSandboxApp.m.f99f8cbe.o */; };
+		4305E29126DA9D10006B091E /* VPNService.m.f99f8cbe.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 4305E21226DA9D0F006B091E /* VPNService.m.f99f8cbe.o */; };
+		4305E29226DA9D10006B091E /* SkflyAppHelper.m.f99f8cbe.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 4305E21326DA9D0F006B091E /* SkflyAppHelper.m.f99f8cbe.o */; };
+		4305E29326DA9D10006B091E /* SkflyUtility.m.f99f8cbe.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 4305E21426DA9D0F006B091E /* SkflyUtility.m.f99f8cbe.o */; };
+		4305E29426DA9D10006B091E /* SkflyLog.m.f99f8cbe.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 4305E21526DA9D0F006B091E /* SkflyLog.m.f99f8cbe.o */; };
+		4305E29526DA9D10006B091E /* NSData+Skfly.m.f99f8cbe.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 4305E21626DA9D0F006B091E /* NSData+Skfly.m.f99f8cbe.o */; };
+		4305E29626DA9D10006B091E /* SkflyJailbreakApiForSandboxApp.m.f99f8cbe.Td in Resources */ = {isa = PBXBuildFile; fileRef = 4305E21726DA9D0F006B091E /* SkflyJailbreakApiForSandboxApp.m.f99f8cbe.Td */; };
+		4305E29726DA9D10006B091E /* 越狱后可用的函数.m.f99f8cbe.Td in Resources */ = {isa = PBXBuildFile; fileRef = 4305E21826DA9D0F006B091E /* 越狱后可用的函数.m.f99f8cbe.Td */; };
+		4305E29826DA9D10006B091E /* SkflyLog.m.f99f8cbe.Td in Resources */ = {isa = PBXBuildFile; fileRef = 4305E21926DA9D0F006B091E /* SkflyLog.m.f99f8cbe.Td */; };
+		4305E29926DA9D10006B091E /* NSData+Skfly.m.f99f8cbe.Td in Resources */ = {isa = PBXBuildFile; fileRef = 4305E21A26DA9D0F006B091E /* NSData+Skfly.m.f99f8cbe.Td */; };
+		4305E29A26DA9D10006B091E /* SkflyProcessHelper.m.f99f8cbe.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 4305E21B26DA9D0F006B091E /* SkflyProcessHelper.m.f99f8cbe.o */; };
+		4305E29B26DA9D10006B091E /* SkflyDeviceInfoOp.m.f99f8cbe.Td in Resources */ = {isa = PBXBuildFile; fileRef = 4305E21C26DA9D0F006B091E /* SkflyDeviceInfoOp.m.f99f8cbe.Td */; };
+		4305E29C26DA9D10006B091E /* NSString+Skfly.m.f99f8cbe.Td in Resources */ = {isa = PBXBuildFile; fileRef = 4305E21D26DA9D0F006B091E /* NSString+Skfly.m.f99f8cbe.Td */; };
+		4305E29D26DA9D10006B091E /* VPNService.m.f99f8cbe.Td in Resources */ = {isa = PBXBuildFile; fileRef = 4305E21E26DA9D0F006B091E /* VPNService.m.f99f8cbe.Td */; };
+		4305E29E26DA9D10006B091E /* SkflyNetworkHelper.m.f99f8cbe.Td in Resources */ = {isa = PBXBuildFile; fileRef = 4305E21F26DA9D0F006B091E /* SkflyNetworkHelper.m.f99f8cbe.Td */; };
+		4305E29F26DA9D10006B091E /* SkflyDeviceInfoOp.m.f99f8cbe.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 4305E22026DA9D0F006B091E /* SkflyDeviceInfoOp.m.f99f8cbe.o */; };
+		4305E2A026DA9D10006B091E /* SkflyAppHelper.m.f99f8cbe.Td in Resources */ = {isa = PBXBuildFile; fileRef = 4305E22126DA9D0F006B091E /* SkflyAppHelper.m.f99f8cbe.Td */; };
+		4305E2A126DA9D10006B091E /* skflyrevealloader.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4305E22226DA9D0F006B091E /* skflyrevealloader.dylib */; };
+		4305E2A226DA9D10006B091E /* prerm in Resources */ = {isa = PBXBuildFile; fileRef = 4305E22526DA9D0F006B091E /* prerm */; };
+		4305E2A326DA9D10006B091E /* preinst in Resources */ = {isa = PBXBuildFile; fileRef = 4305E22626DA9D0F006B091E /* preinst */; };
+		4305E2A426DA9D10006B091E /* postinst in Resources */ = {isa = PBXBuildFile; fileRef = 4305E22726DA9D0F006B091E /* postinst */; };
+		4305E2A526DA9D10006B091E /* postrm in Resources */ = {isa = PBXBuildFile; fileRef = 4305E22826DA9D0F006B091E /* postrm */; };
+		4305E2A626DA9D10006B091E /* control in Resources */ = {isa = PBXBuildFile; fileRef = 4305E22926DA9D0F006B091E /* control */; };
+		4305E2A726DA9D10006B091E /* skflyrevealloader.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4305E22D26DA9D0F006B091E /* skflyrevealloader.dylib */; };
+		4305E2A826DA9D10006B091E /* Reveal2Loader.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4305E22E26DA9D0F006B091E /* Reveal2Loader.plist */; };
+		4305E2A926DA9D10006B091E /* skflyrevealloader.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4305E22F26DA9D0F006B091E /* skflyrevealloader.plist */; };
+		4305E2AA26DA9D10006B091E /* reveal-logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4305E23226DA9D0F006B091E /* reveal-logo@3x.png */; };
+		4305E2AB26DA9D10006B091E /* reveal-logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4305E23326DA9D0F006B091E /* reveal-logo@2x.png */; };
+		4305E2AC26DA9D10006B091E /* Reveal2Loader.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4305E23426DA9D0F006B091E /* Reveal2Loader.plist */; };
+		4305E2AD26DA9D10006B091E /* CodeResources in Resources */ = {isa = PBXBuildFile; fileRef = 4305E23826DA9D0F006B091E /* CodeResources */; };
+		4305E2AE26DA9D10006B091E /* RevealServer in Frameworks */ = {isa = PBXBuildFile; fileRef = 4305E23B26DA9D0F006B091E /* RevealServer */; };
+		4305E2AF26DA9D10006B091E /* integrate_revealserver.sh in Resources */ = {isa = PBXBuildFile; fileRef = 4305E23D26DA9D0F006B091E /* integrate_revealserver.sh */; };
+		4305E2B026DA9D10006B091E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4305E24026DA9D0F006B091E /* Info.plist */; };
+		4305E2B126DA9D10006B091E /* RevealServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4305E24126DA9D0F006B091E /* RevealServer.framework */; };
+		4305E2B226DA9D10006B091E /* com.skfly.reveal2loader-1.0-6 in Resources */ = {isa = PBXBuildFile; fileRef = 4305E24326DA9D0F006B091E /* com.skfly.reveal2loader-1.0-6 */; };
+		4305E2B326DA9D10006B091E /* com.h4ck1n.Reveal2Loader-1.0-6 in Resources */ = {isa = PBXBuildFile; fileRef = 4305E24426DA9D0F006B091E /* com.h4ck1n.Reveal2Loader-1.0-6 */; };
+		4305E2B426DA9D10006B091E /* com.skfly.reveal2loader-0.0.1 in Resources */ = {isa = PBXBuildFile; fileRef = 4305E24526DA9D0F006B091E /* com.skfly.reveal2loader-0.0.1 */; };
+		4305E2B526DA9D10006B091E /* RevealLoader-1.0-3 in Resources */ = {isa = PBXBuildFile; fileRef = 4305E24626DA9D0F006B091E /* RevealLoader-1.0-3 */; };
+		4305E2B626DA9D10006B091E /* Reveal2Loader-1.0-3 in Resources */ = {isa = PBXBuildFile; fileRef = 4305E24726DA9D0F006B091E /* Reveal2Loader-1.0-3 */; };
+		4305E2B726DA9D10006B091E /* com.skfly.revealloader-0.0.1 in Resources */ = {isa = PBXBuildFile; fileRef = 4305E24826DA9D0F006B091E /* com.skfly.revealloader-0.0.1 */; };
+		4305E2B826DA9D10006B091E /* last_package in Resources */ = {isa = PBXBuildFile; fileRef = 4305E24926DA9D0F006B091E /* last_package */; };
+		4305E2B926DA9D10006B091E /* build_session in Resources */ = {isa = PBXBuildFile; fileRef = 4305E24A26DA9D0F006B091E /* build_session */; };
+		4305E2BA26DA9D10006B091E /* PackageVersion.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4305E24B26DA9D0F006B091E /* PackageVersion.plist */; };
+		4305E2BB26DA9D10006B091E /* Reveal2Loader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4305E24C26DA9D0F006B091E /* Reveal2Loader.m */; };
+		4305E2BC26DA9D10006B091E /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 4305E24D26DA9D0F006B091E /* Makefile */; };
+		4305E2BD26DA9D10006B091E /* prerm in Resources */ = {isa = PBXBuildFile; fileRef = 4305E25026DA9D0F006B091E /* prerm */; };
+		4305E2BE26DA9D10006B091E /* preinst in Resources */ = {isa = PBXBuildFile; fileRef = 4305E25126DA9D0F006B091E /* preinst */; };
+		4305E2BF26DA9D10006B091E /* postinst in Resources */ = {isa = PBXBuildFile; fileRef = 4305E25226DA9D0F006B091E /* postinst */; };
+		4305E2C026DA9D10006B091E /* postrm in Resources */ = {isa = PBXBuildFile; fileRef = 4305E25326DA9D0F006B091E /* postrm */; };
+		4305E2C126DA9D10006B091E /* control in Resources */ = {isa = PBXBuildFile; fileRef = 4305E25426DA9D0F006B091E /* control */; };
+		4305E2C226DA9D10006B091E /* Reveal2Loader.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4305E25826DA9D0F006B091E /* Reveal2Loader.plist */; };
+		4305E2C326DA9D10006B091E /* reveal-logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4305E25B26DA9D0F006B091E /* reveal-logo@3x.png */; };
+		4305E2C426DA9D10006B091E /* reveal-logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4305E25C26DA9D0F006B091E /* reveal-logo@2x.png */; };
+		4305E2C526DA9D10006B091E /* Reveal2Loader.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4305E25D26DA9D0F006B091E /* Reveal2Loader.plist */; };
+		4305E2CB26DA9D10006B091E /* com.skfly.reveal2loader_1.0-6-21+debug_iphoneos-arm.deb in Frameworks */ = {isa = PBXBuildFile; fileRef = 4305E26E26DA9D0F006B091E /* com.skfly.reveal2loader_1.0-6-21+debug_iphoneos-arm.deb */; };
+		4305E2CC26DA9D10006B091E /* skflyrevealloader.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4305E26F26DA9D0F006B091E /* skflyrevealloader.plist */; };
+		4305E2CD26DA9D10006B091E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4305E27026DA9D0F006B091E /* main.m */; };
+		4305E2CE26DA9D10006B091E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4305E27126DA9D0F006B091E /* AppDelegate.m */; };
+		4305E2CF26DA9D10006B091E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4305E27226DA9D0F006B091E /* Info.plist */; };
+		4305E2D026DA9D10006B091E /* QQ20200602-023543@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4305E27526DA9D0F006B091E /* QQ20200602-023543@2x.png */; };
+		4305E2D126DA9D10006B091E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4305E27626DA9D0F006B091E /* README.md */; };
+		43550E27242B3BDE00198237 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43550E26242B3BDE00198237 /* SystemConfiguration.framework */; };
+		437FCFD226D8745000CA78C7 /* 开发文档.txt in Resources */ = {isa = PBXBuildFile; fileRef = 437FCFD126D8745000CA78C7 /* 开发文档.txt */; };
+		43C4A05626DB271000CE364C /* RevealServer_21.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43C4A05426DB271000CE364C /* RevealServer_21.framework */; };
+		43C4A05726DB271000CE364C /* RevealServer_31.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43C4A05526DB271000CE364C /* RevealServer_31.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C91FD477221B45D20089920A /* Reveal2Loader.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = Reveal2Loader.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		4305E1E426DA9D0F006B091E /* QQ20190321-000639@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QQ20190321-000639@2x.png"; sourceTree = "<group>"; };
+		4305E1E526DA9D0F006B091E /* QQ20190321-002625@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QQ20190321-002625@2x.png"; sourceTree = "<group>"; };
+		4305E1E626DA9D0F006B091E /* QQ20190219-050112@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QQ20190219-050112@2x.png"; sourceTree = "<group>"; };
+		4305E1E826DA9D0F006B091E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4305E1E926DA9D0F006B091E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4305E1EA26DA9D0F006B091E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4305E1EB26DA9D0F006B091E /* SceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		4305E1ED26DA9D0F006B091E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4305E1EF26DA9D0F006B091E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4305E1F226DA9D0F006B091E /* fakeroot */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fakeroot; sourceTree = "<group>"; };
+		4305E1F526DA9D0F006B091E /* .stamp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .stamp; sourceTree = "<group>"; };
+		4305E1F626DA9D0F006B091E /* skflyrevealloader.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = skflyrevealloader.dylib; sourceTree = "<group>"; };
+		4305E1F826DA9D0F006B091E /* Reveal2Loader.m.f99f8cbe.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = Reveal2Loader.m.f99f8cbe.o; sourceTree = "<group>"; };
+		4305E1F926DA9D0F006B091E /* Reveal2Loader.m.f99f8cbe.Td */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Reveal2Loader.m.f99f8cbe.Td; sourceTree = "<group>"; };
+		4305E1FA26DA9D0F006B091E /* skflyrevealloader.dylib.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = skflyrevealloader.dylib.dSYM; sourceTree = "<group>"; };
+		4305E20626DA9D0F006B091E /* NSString+Skfly.m.f99f8cbe.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = "NSString+Skfly.m.f99f8cbe.o"; sourceTree = "<group>"; };
+		4305E20726DA9D0F006B091E /* SkflyUIViewHelper.m.f99f8cbe.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = SkflyUIViewHelper.m.f99f8cbe.o; sourceTree = "<group>"; };
+		4305E20826DA9D0F006B091E /* TKToast.m.f99f8cbe.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = TKToast.m.f99f8cbe.o; sourceTree = "<group>"; };
+		4305E20926DA9D0F006B091E /* SkflyProcessHelper.m.f99f8cbe.Td */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SkflyProcessHelper.m.f99f8cbe.Td; sourceTree = "<group>"; };
+		4305E20A26DA9D0F006B091E /* TKToast.m.f99f8cbe.Td */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TKToast.m.f99f8cbe.Td; sourceTree = "<group>"; };
+		4305E20B26DA9D0F006B091E /* SkflyUtility.m.f99f8cbe.Td */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SkflyUtility.m.f99f8cbe.Td; sourceTree = "<group>"; };
+		4305E20C26DA9D0F006B091E /* PhotoView.m.f99f8cbe.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = PhotoView.m.f99f8cbe.o; sourceTree = "<group>"; };
+		4305E20D26DA9D0F006B091E /* SkflyUIViewHelper.m.f99f8cbe.Td */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SkflyUIViewHelper.m.f99f8cbe.Td; sourceTree = "<group>"; };
+		4305E20E26DA9D0F006B091E /* PhotoView.m.f99f8cbe.Td */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PhotoView.m.f99f8cbe.Td; sourceTree = "<group>"; };
+		4305E20F26DA9D0F006B091E /* SkflyNetworkHelper.m.f99f8cbe.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = SkflyNetworkHelper.m.f99f8cbe.o; sourceTree = "<group>"; };
+		4305E21026DA9D0F006B091E /* 越狱后可用的函数.m.f99f8cbe.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = "越狱后可用的函数.m.f99f8cbe.o"; sourceTree = "<group>"; };
+		4305E21126DA9D0F006B091E /* SkflyJailbreakApiForSandboxApp.m.f99f8cbe.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = SkflyJailbreakApiForSandboxApp.m.f99f8cbe.o; sourceTree = "<group>"; };
+		4305E21226DA9D0F006B091E /* VPNService.m.f99f8cbe.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = VPNService.m.f99f8cbe.o; sourceTree = "<group>"; };
+		4305E21326DA9D0F006B091E /* SkflyAppHelper.m.f99f8cbe.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = SkflyAppHelper.m.f99f8cbe.o; sourceTree = "<group>"; };
+		4305E21426DA9D0F006B091E /* SkflyUtility.m.f99f8cbe.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = SkflyUtility.m.f99f8cbe.o; sourceTree = "<group>"; };
+		4305E21526DA9D0F006B091E /* SkflyLog.m.f99f8cbe.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = SkflyLog.m.f99f8cbe.o; sourceTree = "<group>"; };
+		4305E21626DA9D0F006B091E /* NSData+Skfly.m.f99f8cbe.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = "NSData+Skfly.m.f99f8cbe.o"; sourceTree = "<group>"; };
+		4305E21726DA9D0F006B091E /* SkflyJailbreakApiForSandboxApp.m.f99f8cbe.Td */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SkflyJailbreakApiForSandboxApp.m.f99f8cbe.Td; sourceTree = "<group>"; };
+		4305E21826DA9D0F006B091E /* 越狱后可用的函数.m.f99f8cbe.Td */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "越狱后可用的函数.m.f99f8cbe.Td"; sourceTree = "<group>"; };
+		4305E21926DA9D0F006B091E /* SkflyLog.m.f99f8cbe.Td */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SkflyLog.m.f99f8cbe.Td; sourceTree = "<group>"; };
+		4305E21A26DA9D0F006B091E /* NSData+Skfly.m.f99f8cbe.Td */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "NSData+Skfly.m.f99f8cbe.Td"; sourceTree = "<group>"; };
+		4305E21B26DA9D0F006B091E /* SkflyProcessHelper.m.f99f8cbe.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = SkflyProcessHelper.m.f99f8cbe.o; sourceTree = "<group>"; };
+		4305E21C26DA9D0F006B091E /* SkflyDeviceInfoOp.m.f99f8cbe.Td */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SkflyDeviceInfoOp.m.f99f8cbe.Td; sourceTree = "<group>"; };
+		4305E21D26DA9D0F006B091E /* NSString+Skfly.m.f99f8cbe.Td */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "NSString+Skfly.m.f99f8cbe.Td"; sourceTree = "<group>"; };
+		4305E21E26DA9D0F006B091E /* VPNService.m.f99f8cbe.Td */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VPNService.m.f99f8cbe.Td; sourceTree = "<group>"; };
+		4305E21F26DA9D0F006B091E /* SkflyNetworkHelper.m.f99f8cbe.Td */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SkflyNetworkHelper.m.f99f8cbe.Td; sourceTree = "<group>"; };
+		4305E22026DA9D0F006B091E /* SkflyDeviceInfoOp.m.f99f8cbe.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = SkflyDeviceInfoOp.m.f99f8cbe.o; sourceTree = "<group>"; };
+		4305E22126DA9D0F006B091E /* SkflyAppHelper.m.f99f8cbe.Td */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SkflyAppHelper.m.f99f8cbe.Td; sourceTree = "<group>"; };
+		4305E22226DA9D0F006B091E /* skflyrevealloader.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = skflyrevealloader.dylib; sourceTree = "<group>"; };
+		4305E22526DA9D0F006B091E /* prerm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = prerm; sourceTree = "<group>"; };
+		4305E22626DA9D0F006B091E /* preinst */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = preinst; sourceTree = "<group>"; };
+		4305E22726DA9D0F006B091E /* postinst */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = postinst; sourceTree = "<group>"; };
+		4305E22826DA9D0F006B091E /* postrm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = postrm; sourceTree = "<group>"; };
+		4305E22926DA9D0F006B091E /* control */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = control; sourceTree = "<group>"; };
+		4305E22D26DA9D0F006B091E /* skflyrevealloader.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = skflyrevealloader.dylib; sourceTree = "<group>"; };
+		4305E22E26DA9D0F006B091E /* Reveal2Loader.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Reveal2Loader.plist; sourceTree = "<group>"; };
+		4305E22F26DA9D0F006B091E /* skflyrevealloader.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = skflyrevealloader.plist; sourceTree = "<group>"; };
+		4305E23226DA9D0F006B091E /* reveal-logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reveal-logo@3x.png"; sourceTree = "<group>"; };
+		4305E23326DA9D0F006B091E /* reveal-logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reveal-logo@2x.png"; sourceTree = "<group>"; };
+		4305E23426DA9D0F006B091E /* Reveal2Loader.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Reveal2Loader.plist; sourceTree = "<group>"; };
+		4305E23826DA9D0F006B091E /* CodeResources */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = CodeResources; sourceTree = "<group>"; };
+		4305E23A26DA9D0F006B091E /* RevealServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RevealServer.h; sourceTree = "<group>"; };
+		4305E23B26DA9D0F006B091E /* RevealServer */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = RevealServer; sourceTree = "<group>"; };
+		4305E23D26DA9D0F006B091E /* integrate_revealserver.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = integrate_revealserver.sh; sourceTree = "<group>"; };
+		4305E23F26DA9D0F006B091E /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		4305E24026DA9D0F006B091E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Info.plist; sourceTree = "<group>"; };
+		4305E24126DA9D0F006B091E /* RevealServer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RevealServer.framework; sourceTree = "<group>"; };
+		4305E24326DA9D0F006B091E /* com.skfly.reveal2loader-1.0-6 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "com.skfly.reveal2loader-1.0-6"; sourceTree = "<group>"; };
+		4305E24426DA9D0F006B091E /* com.h4ck1n.Reveal2Loader-1.0-6 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "com.h4ck1n.Reveal2Loader-1.0-6"; sourceTree = "<group>"; };
+		4305E24526DA9D0F006B091E /* com.skfly.reveal2loader-0.0.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = "com.skfly.reveal2loader-0.0.1"; sourceTree = "<group>"; };
+		4305E24626DA9D0F006B091E /* RevealLoader-1.0-3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "RevealLoader-1.0-3"; sourceTree = "<group>"; };
+		4305E24726DA9D0F006B091E /* Reveal2Loader-1.0-3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Reveal2Loader-1.0-3"; sourceTree = "<group>"; };
+		4305E24826DA9D0F006B091E /* com.skfly.revealloader-0.0.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = "com.skfly.revealloader-0.0.1"; sourceTree = "<group>"; };
+		4305E24926DA9D0F006B091E /* last_package */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = last_package; sourceTree = "<group>"; };
+		4305E24A26DA9D0F006B091E /* build_session */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = build_session; sourceTree = "<group>"; };
+		4305E24B26DA9D0F006B091E /* PackageVersion.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		4305E24C26DA9D0F006B091E /* Reveal2Loader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reveal2Loader.m; sourceTree = "<group>"; };
+		4305E24D26DA9D0F006B091E /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		4305E25026DA9D0F006B091E /* prerm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = prerm; sourceTree = "<group>"; };
+		4305E25126DA9D0F006B091E /* preinst */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = preinst; sourceTree = "<group>"; };
+		4305E25226DA9D0F006B091E /* postinst */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = postinst; sourceTree = "<group>"; };
+		4305E25326DA9D0F006B091E /* postrm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = postrm; sourceTree = "<group>"; };
+		4305E25426DA9D0F006B091E /* control */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = control; sourceTree = "<group>"; };
+		4305E25826DA9D0F006B091E /* Reveal2Loader.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Reveal2Loader.plist; sourceTree = "<group>"; };
+		4305E25B26DA9D0F006B091E /* reveal-logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reveal-logo@3x.png"; sourceTree = "<group>"; };
+		4305E25C26DA9D0F006B091E /* reveal-logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reveal-logo@2x.png"; sourceTree = "<group>"; };
+		4305E25D26DA9D0F006B091E /* Reveal2Loader.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Reveal2Loader.plist; sourceTree = "<group>"; };
+		4305E26B26DA9D0F006B091E /* Reveal2Loader-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Reveal2Loader-Prefix.pch"; sourceTree = "<group>"; };
+		4305E26C26DA9D0F006B091E /* Reveal2Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reveal2Loader.h; sourceTree = "<group>"; };
+		4305E26E26DA9D0F006B091E /* com.skfly.reveal2loader_1.0-6-21+debug_iphoneos-arm.deb */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "com.skfly.reveal2loader_1.0-6-21+debug_iphoneos-arm.deb"; sourceTree = "<group>"; };
+		4305E26F26DA9D0F006B091E /* skflyrevealloader.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = skflyrevealloader.plist; sourceTree = "<group>"; };
+		4305E27026DA9D0F006B091E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4305E27126DA9D0F006B091E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4305E27226DA9D0F006B091E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4305E27326DA9D0F006B091E /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4305E27426DA9D0F006B091E /* SceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		4305E27526DA9D0F006B091E /* QQ20200602-023543@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QQ20200602-023543@2x.png"; sourceTree = "<group>"; };
+		4305E27626DA9D0F006B091E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		43550E26242B3BDE00198237 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		437FCFD126D8745000CA78C7 /* 开发文档.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "开发文档.txt"; sourceTree = "<group>"; };
+		43A967D923FAC69E00F4B981 /* Reveal2Loader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reveal2Loader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43C4A05426DB271000CE364C /* RevealServer_21.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RevealServer_21.framework; sourceTree = "<group>"; };
+		43C4A05526DB271000CE364C /* RevealServer_31.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RevealServer_31.framework; sourceTree = "<group>"; };
 		C91FD47A221B45D20089920A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		C91FD47F221B45D20089920A /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
-		C91FD480221B45D20089920A /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
-		C91FD482221B45D20089920A /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
-		C91FD486221B45D20089920A /* Reveal2Loader.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Reveal2Loader.plist; path = Package/Library/PreferenceLoader/Preferences/Reveal2Loader.plist; sourceTree = "<group>"; };
-		C91FD487221B45D20089920A /* reveal-logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "reveal-logo@3x.png"; path = "Package/Library/PreferenceLoader/Preferences/reveal-logo@3x.png"; sourceTree = "<group>"; };
-		C91FD488221B45D20089920A /* reveal-logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "reveal-logo@2x.png"; path = "Package/Library/PreferenceLoader/Preferences/reveal-logo@2x.png"; sourceTree = "<group>"; };
-		C91FD489221B45D20089920A /* Reveal2Loader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Reveal2Loader-Prefix.pch"; sourceTree = "<group>"; };
-		C91FD48A221B45D20089920A /* preinst */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = preinst; path = Package/DEBIAN/preinst; sourceTree = "<group>"; };
-		C91FD48B221B45D30089920A /* postinst */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = postinst; path = Package/DEBIAN/postinst; sourceTree = "<group>"; };
-		C91FD48C221B45D30089920A /* postrm */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = postrm; path = Package/DEBIAN/postrm; sourceTree = "<group>"; };
-		C91FD48D221B45D30089920A /* prerm */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = prerm; path = Package/DEBIAN/prerm; sourceTree = "<group>"; };
-		C91FD48E221B45D30089920A /* Reveal2Loader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reveal2Loader.h; sourceTree = "<group>"; };
-		C91FD490221B45D30089920A /* Reveal2Loader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Reveal2Loader.m; sourceTree = "<group>"; };
-		C91FD494221B45D30089920A /* Reveal2Loader.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Reveal2Loader.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/Reveal2Loader.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C91FD472221B45D20089920A /* Frameworks */ = {
+		43A967D623FAC69E00F4B981 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C91FD47B221B45D20089920A /* Foundation.framework in Frameworks */,
+				4305E28E26DA9D10006B091E /* SkflyNetworkHelper.m.f99f8cbe.o in Frameworks */,
+				4305E2A726DA9D10006B091E /* skflyrevealloader.dylib in Frameworks */,
+				4305E28726DA9D10006B091E /* TKToast.m.f99f8cbe.o in Frameworks */,
+				4305E28226DA9D10006B091E /* Reveal2Loader.m.f99f8cbe.o in Frameworks */,
+				43C4A05626DB271000CE364C /* RevealServer_21.framework in Frameworks */,
+				4305E28626DA9D10006B091E /* SkflyUIViewHelper.m.f99f8cbe.o in Frameworks */,
+				43C4A05726DB271000CE364C /* RevealServer_31.framework in Frameworks */,
+				4305E29426DA9D10006B091E /* SkflyLog.m.f99f8cbe.o in Frameworks */,
+				4305E2AE26DA9D10006B091E /* RevealServer in Frameworks */,
+				4305E28526DA9D10006B091E /* NSString+Skfly.m.f99f8cbe.o in Frameworks */,
+				4305E28F26DA9D10006B091E /* 越狱后可用的函数.m.f99f8cbe.o in Frameworks */,
+				4305E29026DA9D10006B091E /* SkflyJailbreakApiForSandboxApp.m.f99f8cbe.o in Frameworks */,
+				4305E29526DA9D10006B091E /* NSData+Skfly.m.f99f8cbe.o in Frameworks */,
+				4305E28B26DA9D10006B091E /* PhotoView.m.f99f8cbe.o in Frameworks */,
+				4305E28126DA9D10006B091E /* skflyrevealloader.dylib in Frameworks */,
+				4305E2B126DA9D10006B091E /* RevealServer.framework in Frameworks */,
+				4305E29326DA9D10006B091E /* SkflyUtility.m.f99f8cbe.o in Frameworks */,
+				4305E2CB26DA9D10006B091E /* com.skfly.reveal2loader_1.0-6-21+debug_iphoneos-arm.deb in Frameworks */,
+				4305E2A126DA9D10006B091E /* skflyrevealloader.dylib in Frameworks */,
+				43550E27242B3BDE00198237 /* SystemConfiguration.framework in Frameworks */,
+				4305E29A26DA9D10006B091E /* SkflyProcessHelper.m.f99f8cbe.o in Frameworks */,
+				4305E29F26DA9D10006B091E /* SkflyDeviceInfoOp.m.f99f8cbe.o in Frameworks */,
+				4305E29126DA9D10006B091E /* VPNService.m.f99f8cbe.o in Frameworks */,
+				4305E29226DA9D10006B091E /* SkflyAppHelper.m.f99f8cbe.o in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4305E1E726DA9D0F006B091E /* Reveal2Loader */ = {
+			isa = PBXGroup;
+			children = (
+				4305E1E826DA9D0F006B091E /* AppDelegate.h */,
+				4305E1E926DA9D0F006B091E /* Assets.xcassets */,
+				4305E1EA26DA9D0F006B091E /* ViewController.m */,
+				4305E1EB26DA9D0F006B091E /* SceneDelegate.m */,
+				4305E1EC26DA9D0F006B091E /* LaunchScreen.storyboard */,
+				4305E1EE26DA9D0F006B091E /* Main.storyboard */,
+				4305E1F026DA9D0F006B091E /* publish_tweak */,
+				4305E27026DA9D0F006B091E /* main.m */,
+				4305E27126DA9D0F006B091E /* AppDelegate.m */,
+				4305E27226DA9D0F006B091E /* Info.plist */,
+				4305E27326DA9D0F006B091E /* ViewController.h */,
+				4305E27426DA9D0F006B091E /* SceneDelegate.h */,
+			);
+			path = Reveal2Loader;
+			sourceTree = "<group>";
+		};
+		4305E1F026DA9D0F006B091E /* publish_tweak */ = {
+			isa = PBXGroup;
+			children = (
+				4305E1F126DA9D0F006B091E /* .theos */,
+				4305E24B26DA9D0F006B091E /* PackageVersion.plist */,
+				4305E24C26DA9D0F006B091E /* Reveal2Loader.m */,
+				4305E24D26DA9D0F006B091E /* Makefile */,
+				4305E24E26DA9D0F006B091E /* layout */,
+				4305E26B26DA9D0F006B091E /* Reveal2Loader-Prefix.pch */,
+				4305E26C26DA9D0F006B091E /* Reveal2Loader.h */,
+				4305E26D26DA9D0F006B091E /* packages */,
+				4305E26F26DA9D0F006B091E /* skflyrevealloader.plist */,
+			);
+			path = publish_tweak;
+			sourceTree = "<group>";
+		};
+		4305E1F126DA9D0F006B091E /* .theos */ = {
+			isa = PBXGroup;
+			children = (
+				4305E1F226DA9D0F006B091E /* fakeroot */,
+				4305E1F326DA9D0F006B091E /* obj */,
+				4305E22326DA9D0F006B091E /* _ */,
+				4305E24226DA9D0F006B091E /* packages */,
+				4305E24926DA9D0F006B091E /* last_package */,
+				4305E24A26DA9D0F006B091E /* build_session */,
+			);
+			path = .theos;
+			sourceTree = "<group>";
+		};
+		4305E1F326DA9D0F006B091E /* obj */ = {
+			isa = PBXGroup;
+			children = (
+				4305E1F426DA9D0F006B091E /* debug */,
+			);
+			path = obj;
+			sourceTree = "<group>";
+		};
+		4305E1F426DA9D0F006B091E /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				4305E1F526DA9D0F006B091E /* .stamp */,
+				4305E1F626DA9D0F006B091E /* skflyrevealloader.dylib */,
+				4305E1F726DA9D0F006B091E /* arm64 */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		4305E1F726DA9D0F006B091E /* arm64 */ = {
+			isa = PBXGroup;
+			children = (
+				4305E1F826DA9D0F006B091E /* Reveal2Loader.m.f99f8cbe.o */,
+				4305E1F926DA9D0F006B091E /* Reveal2Loader.m.f99f8cbe.Td */,
+				4305E1FA26DA9D0F006B091E /* skflyrevealloader.dylib.dSYM */,
+				4305E1FB26DA9D0F006B091E /* Users */,
+				4305E22226DA9D0F006B091E /* skflyrevealloader.dylib */,
+			);
+			path = arm64;
+			sourceTree = "<group>";
+		};
+		4305E1FB26DA9D0F006B091E /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				4305E1FC26DA9D0F006B091E /* skfly */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		4305E1FC26DA9D0F006B091E /* skfly */ = {
+			isa = PBXGroup;
+			children = (
+				4305E1FD26DA9D0F006B091E /* Desktop */,
+			);
+			path = skfly;
+			sourceTree = "<group>";
+		};
+		4305E1FD26DA9D0F006B091E /* Desktop */ = {
+			isa = PBXGroup;
+			children = (
+				4305E1FE26DA9D0F006B091E /* workspace */,
+			);
+			path = Desktop;
+			sourceTree = "<group>";
+		};
+		4305E1FE26DA9D0F006B091E /* workspace */ = {
+			isa = PBXGroup;
+			children = (
+				4305E1FF26DA9D0F006B091E /* practice */,
+			);
+			path = workspace;
+			sourceTree = "<group>";
+		};
+		4305E1FF26DA9D0F006B091E /* practice */ = {
+			isa = PBXGroup;
+			children = (
+				4305E20026DA9D0F006B091E /* a_qiu */,
+			);
+			path = practice;
+			sourceTree = "<group>";
+		};
+		4305E20026DA9D0F006B091E /* a_qiu */ = {
+			isa = PBXGroup;
+			children = (
+				4305E20126DA9D0F006B091E /* theos_master_20200110 */,
+			);
+			path = a_qiu;
+			sourceTree = "<group>";
+		};
+		4305E20126DA9D0F006B091E /* theos_master_20200110 */ = {
+			isa = PBXGroup;
+			children = (
+				4305E20226DA9D0F006B091E /* common */,
+			);
+			path = theos_master_20200110;
+			sourceTree = "<group>";
+		};
+		4305E20226DA9D0F006B091E /* common */ = {
+			isa = PBXGroup;
+			children = (
+				4305E20326DA9D0F006B091E /* SkflyCommonSupport */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		4305E20326DA9D0F006B091E /* SkflyCommonSupport */ = {
+			isa = PBXGroup;
+			children = (
+				4305E20426DA9D0F006B091E /* SkflyCommonSupport */,
+			);
+			path = SkflyCommonSupport;
+			sourceTree = "<group>";
+		};
+		4305E20426DA9D0F006B091E /* SkflyCommonSupport */ = {
+			isa = PBXGroup;
+			children = (
+				4305E20526DA9D0F006B091E /* public */,
+			);
+			path = SkflyCommonSupport;
+			sourceTree = "<group>";
+		};
+		4305E20526DA9D0F006B091E /* public */ = {
+			isa = PBXGroup;
+			children = (
+				4305E20626DA9D0F006B091E /* NSString+Skfly.m.f99f8cbe.o */,
+				4305E20726DA9D0F006B091E /* SkflyUIViewHelper.m.f99f8cbe.o */,
+				4305E20826DA9D0F006B091E /* TKToast.m.f99f8cbe.o */,
+				4305E20926DA9D0F006B091E /* SkflyProcessHelper.m.f99f8cbe.Td */,
+				4305E20A26DA9D0F006B091E /* TKToast.m.f99f8cbe.Td */,
+				4305E20B26DA9D0F006B091E /* SkflyUtility.m.f99f8cbe.Td */,
+				4305E20C26DA9D0F006B091E /* PhotoView.m.f99f8cbe.o */,
+				4305E20D26DA9D0F006B091E /* SkflyUIViewHelper.m.f99f8cbe.Td */,
+				4305E20E26DA9D0F006B091E /* PhotoView.m.f99f8cbe.Td */,
+				4305E20F26DA9D0F006B091E /* SkflyNetworkHelper.m.f99f8cbe.o */,
+				4305E21026DA9D0F006B091E /* 越狱后可用的函数.m.f99f8cbe.o */,
+				4305E21126DA9D0F006B091E /* SkflyJailbreakApiForSandboxApp.m.f99f8cbe.o */,
+				4305E21226DA9D0F006B091E /* VPNService.m.f99f8cbe.o */,
+				4305E21326DA9D0F006B091E /* SkflyAppHelper.m.f99f8cbe.o */,
+				4305E21426DA9D0F006B091E /* SkflyUtility.m.f99f8cbe.o */,
+				4305E21526DA9D0F006B091E /* SkflyLog.m.f99f8cbe.o */,
+				4305E21626DA9D0F006B091E /* NSData+Skfly.m.f99f8cbe.o */,
+				4305E21726DA9D0F006B091E /* SkflyJailbreakApiForSandboxApp.m.f99f8cbe.Td */,
+				4305E21826DA9D0F006B091E /* 越狱后可用的函数.m.f99f8cbe.Td */,
+				4305E21926DA9D0F006B091E /* SkflyLog.m.f99f8cbe.Td */,
+				4305E21A26DA9D0F006B091E /* NSData+Skfly.m.f99f8cbe.Td */,
+				4305E21B26DA9D0F006B091E /* SkflyProcessHelper.m.f99f8cbe.o */,
+				4305E21C26DA9D0F006B091E /* SkflyDeviceInfoOp.m.f99f8cbe.Td */,
+				4305E21D26DA9D0F006B091E /* NSString+Skfly.m.f99f8cbe.Td */,
+				4305E21E26DA9D0F006B091E /* VPNService.m.f99f8cbe.Td */,
+				4305E21F26DA9D0F006B091E /* SkflyNetworkHelper.m.f99f8cbe.Td */,
+				4305E22026DA9D0F006B091E /* SkflyDeviceInfoOp.m.f99f8cbe.o */,
+				4305E22126DA9D0F006B091E /* SkflyAppHelper.m.f99f8cbe.Td */,
+			);
+			path = public;
+			sourceTree = "<group>";
+		};
+		4305E22326DA9D0F006B091E /* _ */ = {
+			isa = PBXGroup;
+			children = (
+				4305E22426DA9D0F006B091E /* DEBIAN */,
+				4305E22A26DA9D0F006B091E /* Library */,
+			);
+			path = _;
+			sourceTree = "<group>";
+		};
+		4305E22426DA9D0F006B091E /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				4305E22526DA9D0F006B091E /* prerm */,
+				4305E22626DA9D0F006B091E /* preinst */,
+				4305E22726DA9D0F006B091E /* postinst */,
+				4305E22826DA9D0F006B091E /* postrm */,
+				4305E22926DA9D0F006B091E /* control */,
+			);
+			path = DEBIAN;
+			sourceTree = "<group>";
+		};
+		4305E22A26DA9D0F006B091E /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				4305E22B26DA9D0F006B091E /* MobileSubstrate */,
+				4305E23026DA9D0F006B091E /* PreferenceLoader */,
+				4305E23526DA9D0F006B091E /* Frameworks */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		4305E22B26DA9D0F006B091E /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				4305E22C26DA9D0F006B091E /* DynamicLibraries */,
+			);
+			path = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		4305E22C26DA9D0F006B091E /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				4305E22D26DA9D0F006B091E /* skflyrevealloader.dylib */,
+				4305E22E26DA9D0F006B091E /* Reveal2Loader.plist */,
+				4305E22F26DA9D0F006B091E /* skflyrevealloader.plist */,
+			);
+			path = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+		4305E23026DA9D0F006B091E /* PreferenceLoader */ = {
+			isa = PBXGroup;
+			children = (
+				4305E23126DA9D0F006B091E /* Preferences */,
+			);
+			path = PreferenceLoader;
+			sourceTree = "<group>";
+		};
+		4305E23126DA9D0F006B091E /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				4305E23226DA9D0F006B091E /* reveal-logo@3x.png */,
+				4305E23326DA9D0F006B091E /* reveal-logo@2x.png */,
+				4305E23426DA9D0F006B091E /* Reveal2Loader.plist */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		4305E23526DA9D0F006B091E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4305E23626DA9D0F006B091E /* RevealServer.framework_31 */,
+				4305E24126DA9D0F006B091E /* RevealServer.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		4305E23626DA9D0F006B091E /* RevealServer.framework_31 */ = {
+			isa = PBXGroup;
+			children = (
+				4305E23726DA9D0F006B091E /* _CodeSignature */,
+				4305E23926DA9D0F006B091E /* Headers */,
+				4305E23B26DA9D0F006B091E /* RevealServer */,
+				4305E23C26DA9D0F006B091E /* Scripts */,
+				4305E23E26DA9D0F006B091E /* Modules */,
+				4305E24026DA9D0F006B091E /* Info.plist */,
+			);
+			path = RevealServer.framework_31;
+			sourceTree = "<group>";
+		};
+		4305E23726DA9D0F006B091E /* _CodeSignature */ = {
+			isa = PBXGroup;
+			children = (
+				4305E23826DA9D0F006B091E /* CodeResources */,
+			);
+			path = _CodeSignature;
+			sourceTree = "<group>";
+		};
+		4305E23926DA9D0F006B091E /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				4305E23A26DA9D0F006B091E /* RevealServer.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		4305E23C26DA9D0F006B091E /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				4305E23D26DA9D0F006B091E /* integrate_revealserver.sh */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		4305E23E26DA9D0F006B091E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				4305E23F26DA9D0F006B091E /* module.modulemap */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		4305E24226DA9D0F006B091E /* packages */ = {
+			isa = PBXGroup;
+			children = (
+				4305E24326DA9D0F006B091E /* com.skfly.reveal2loader-1.0-6 */,
+				4305E24426DA9D0F006B091E /* com.h4ck1n.Reveal2Loader-1.0-6 */,
+				4305E24526DA9D0F006B091E /* com.skfly.reveal2loader-0.0.1 */,
+				4305E24626DA9D0F006B091E /* RevealLoader-1.0-3 */,
+				4305E24726DA9D0F006B091E /* Reveal2Loader-1.0-3 */,
+				4305E24826DA9D0F006B091E /* com.skfly.revealloader-0.0.1 */,
+			);
+			path = packages;
+			sourceTree = "<group>";
+		};
+		4305E24E26DA9D0F006B091E /* layout */ = {
+			isa = PBXGroup;
+			children = (
+				4305E24F26DA9D0F006B091E /* DEBIAN */,
+				4305E25526DA9D0F006B091E /* Library */,
+			);
+			path = layout;
+			sourceTree = "<group>";
+		};
+		4305E24F26DA9D0F006B091E /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				4305E25026DA9D0F006B091E /* prerm */,
+				4305E25126DA9D0F006B091E /* preinst */,
+				4305E25226DA9D0F006B091E /* postinst */,
+				4305E25326DA9D0F006B091E /* postrm */,
+				4305E25426DA9D0F006B091E /* control */,
+			);
+			path = DEBIAN;
+			sourceTree = "<group>";
+		};
+		4305E25526DA9D0F006B091E /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				4305E25626DA9D0F006B091E /* MobileSubstrate */,
+				4305E25926DA9D0F006B091E /* PreferenceLoader */,
+				4305E25E26DA9D0F006B091E /* Frameworks */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		4305E25626DA9D0F006B091E /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				4305E25726DA9D0F006B091E /* DynamicLibraries */,
+			);
+			path = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		4305E25726DA9D0F006B091E /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				4305E25826DA9D0F006B091E /* Reveal2Loader.plist */,
+			);
+			path = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+		4305E25926DA9D0F006B091E /* PreferenceLoader */ = {
+			isa = PBXGroup;
+			children = (
+				4305E25A26DA9D0F006B091E /* Preferences */,
+			);
+			path = PreferenceLoader;
+			sourceTree = "<group>";
+		};
+		4305E25A26DA9D0F006B091E /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				4305E25B26DA9D0F006B091E /* reveal-logo@3x.png */,
+				4305E25C26DA9D0F006B091E /* reveal-logo@2x.png */,
+				4305E25D26DA9D0F006B091E /* Reveal2Loader.plist */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		4305E25E26DA9D0F006B091E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43C4A05426DB271000CE364C /* RevealServer_21.framework */,
+				43C4A05526DB271000CE364C /* RevealServer_31.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		4305E26D26DA9D0F006B091E /* packages */ = {
+			isa = PBXGroup;
+			children = (
+				4305E26E26DA9D0F006B091E /* com.skfly.reveal2loader_1.0-6-21+debug_iphoneos-arm.deb */,
+			);
+			path = packages;
+			sourceTree = "<group>";
+		};
 		C91FD46C221B45D20089920A = {
 			isa = PBXGroup;
 			children = (
-				C91FD47C221B45D20089920A /* Reveal2Loader */,
+				4305E1E626DA9D0F006B091E /* QQ20190219-050112@2x.png */,
+				4305E1E426DA9D0F006B091E /* QQ20190321-000639@2x.png */,
+				4305E1E526DA9D0F006B091E /* QQ20190321-002625@2x.png */,
+				4305E27526DA9D0F006B091E /* QQ20200602-023543@2x.png */,
+				4305E27626DA9D0F006B091E /* README.md */,
+				4305E1E726DA9D0F006B091E /* Reveal2Loader */,
+				437FCFD126D8745000CA78C7 /* 开发文档.txt */,
 				C91FD479221B45D20089920A /* Frameworks */,
 				C91FD478221B45D20089920A /* Products */,
 			);
@@ -55,7 +663,7 @@
 		C91FD478221B45D20089920A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C91FD477221B45D20089920A /* Reveal2Loader.dylib */,
+				43A967D923FAC69E00F4B981 /* Reveal2Loader.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,119 +671,22 @@
 		C91FD479221B45D20089920A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				43550E26242B3BDE00198237 /* SystemConfiguration.framework */,
 				C91FD47A221B45D20089920A /* Foundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C91FD47C221B45D20089920A /* Reveal2Loader */ = {
-			isa = PBXGroup;
-			children = (
-				C91FD48E221B45D30089920A /* Reveal2Loader.h */,
-				C91FD490221B45D30089920A /* Reveal2Loader.m */,
-				C91FD47D221B45D20089920A /* Package */,
-				C91FD481221B45D20089920A /* Supporting Files */,
-			);
-			path = Reveal2Loader;
-			sourceTree = "<group>";
-		};
-		C91FD47D221B45D20089920A /* Package */ = {
-			isa = PBXGroup;
-			children = (
-				C91FD47E221B45D20089920A /* DEBIAN */,
-				C91FD483221B45D20089920A /* Library */,
-			);
-			name = Package;
-			sourceTree = "<group>";
-		};
-		C91FD47E221B45D20089920A /* DEBIAN */ = {
-			isa = PBXGroup;
-			children = (
-				C91FD47F221B45D20089920A /* control */,
-				C91FD480221B45D20089920A /* control.txt */,
-				C91FD48A221B45D20089920A /* preinst */,
-				C91FD48B221B45D30089920A /* postinst */,
-				C91FD48C221B45D30089920A /* postrm */,
-				C91FD48D221B45D30089920A /* prerm */,
-			);
-			name = DEBIAN;
-			sourceTree = "<group>";
-		};
-		C91FD481221B45D20089920A /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C91FD482221B45D20089920A /* PackageVersion.plist */,
-				C91FD489221B45D20089920A /* Reveal2Loader-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		C91FD483221B45D20089920A /* Library */ = {
-			isa = PBXGroup;
-			children = (
-				C91FD484221B45D20089920A /* PreferenceLoader */,
-				C91FD492221B45D30089920A /* MobileSubstrate */,
-			);
-			name = Library;
-			sourceTree = "<group>";
-		};
-		C91FD484221B45D20089920A /* PreferenceLoader */ = {
-			isa = PBXGroup;
-			children = (
-				C91FD485221B45D20089920A /* Preferences */,
-			);
-			name = PreferenceLoader;
-			sourceTree = "<group>";
-		};
-		C91FD485221B45D20089920A /* Preferences */ = {
-			isa = PBXGroup;
-			children = (
-				C91FD486221B45D20089920A /* Reveal2Loader.plist */,
-				C91FD487221B45D20089920A /* reveal-logo@3x.png */,
-				C91FD488221B45D20089920A /* reveal-logo@2x.png */,
-			);
-			name = Preferences;
-			sourceTree = "<group>";
-		};
-		C91FD492221B45D30089920A /* MobileSubstrate */ = {
-			isa = PBXGroup;
-			children = (
-				C91FD493221B45D30089920A /* DynamicLibraries */,
-			);
-			name = MobileSubstrate;
-			sourceTree = "<group>";
-		};
-		C91FD493221B45D30089920A /* DynamicLibraries */ = {
-			isa = PBXGroup;
-			children = (
-				C91FD494221B45D30089920A /* Reveal2Loader.plist */,
-			);
-			name = DynamicLibraries;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		C91FD473221B45D20089920A /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C91FD48F221B45D30089920A /* Reveal2Loader.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		C91FD476221B45D20089920A /* Reveal2Loader */ = {
+		43A967D823FAC69E00F4B981 /* Reveal2Loader */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C91FD497221B45D30089920A /* Build configuration list for PBXNativeTarget "Reveal2Loader" */;
+			buildConfigurationList = 43A967EF23FAC6A400F4B981 /* Build configuration list for PBXNativeTarget "Reveal2Loader" */;
 			buildPhases = (
-				C91FD471221B45D20089920A /* Sources */,
-				C91FD472221B45D20089920A /* Frameworks */,
-				C91FD473221B45D20089920A /* Headers */,
-				C91FD474221B45D20089920A /* ShellScript */,
-				C91FD475221B45D20089920A /* ShellScript */,
+				43A967D523FAC69E00F4B981 /* Sources */,
+				43A967D623FAC69E00F4B981 /* Frameworks */,
+				43A967D723FAC69E00F4B981 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -183,8 +694,8 @@
 			);
 			name = Reveal2Loader;
 			productName = Reveal2Loader;
-			productReference = C91FD477221B45D20089920A /* Reveal2Loader.dylib */;
-			productType = "com.apple.product-type.library.dynamic";
+			productReference = 43A967D923FAC69E00F4B981 /* Reveal2Loader.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -194,9 +705,10 @@
 			attributes = {
 				LastUpgradeCheck = 0720;
 				TargetAttributes = {
-					C91FD476221B45D20089920A = {
-						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = QW3A7VF8DU;
+					43A967D823FAC69E00F4B981 = {
+						CreatedOnToolsVersion = 11.3;
+						DevelopmentTeam = 97F6M8W3K8;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -207,58 +719,265 @@
 			knownRegions = (
 				English,
 				en,
+				Base,
 			);
 			mainGroup = C91FD46C221B45D20089920A;
 			productRefGroup = C91FD478221B45D20089920A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C91FD476221B45D20089920A /* Reveal2Loader */,
+				43A967D823FAC69E00F4B981 /* Reveal2Loader */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		C91FD474221B45D20089920A /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
+/* Begin PBXResourcesBuildPhase section */
+		43A967D723FAC69E00F4B981 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
+				4305E2B926DA9D10006B091E /* build_session in Resources */,
+				4305E2B726DA9D10006B091E /* com.skfly.revealloader-0.0.1 in Resources */,
+				4305E28326DA9D10006B091E /* Reveal2Loader.m.f99f8cbe.Td in Resources */,
+				4305E27E26DA9D10006B091E /* Main.storyboard in Resources */,
+				4305E28C26DA9D10006B091E /* SkflyUIViewHelper.m.f99f8cbe.Td in Resources */,
+				4305E2AD26DA9D10006B091E /* CodeResources in Resources */,
+				4305E27726DA9D10006B091E /* QQ20190321-000639@2x.png in Resources */,
+				4305E2AB26DA9D10006B091E /* reveal-logo@2x.png in Resources */,
+				4305E27926DA9D10006B091E /* QQ20190219-050112@2x.png in Resources */,
+				4305E29626DA9D10006B091E /* SkflyJailbreakApiForSandboxApp.m.f99f8cbe.Td in Resources */,
+				4305E2BF26DA9D10006B091E /* postinst in Resources */,
+				4305E27F26DA9D10006B091E /* fakeroot in Resources */,
+				4305E2C126DA9D10006B091E /* control in Resources */,
+				4305E28426DA9D10006B091E /* skflyrevealloader.dylib.dSYM in Resources */,
+				4305E2AF26DA9D10006B091E /* integrate_revealserver.sh in Resources */,
+				4305E2C326DA9D10006B091E /* reveal-logo@3x.png in Resources */,
+				4305E2BE26DA9D10006B091E /* preinst in Resources */,
+				4305E2C426DA9D10006B091E /* reveal-logo@2x.png in Resources */,
+				4305E27826DA9D10006B091E /* QQ20190321-002625@2x.png in Resources */,
+				4305E2A326DA9D10006B091E /* preinst in Resources */,
+				4305E27D26DA9D10006B091E /* LaunchScreen.storyboard in Resources */,
+				437FCFD226D8745000CA78C7 /* 开发文档.txt in Resources */,
+				4305E2A426DA9D10006B091E /* postinst in Resources */,
+				4305E2D126DA9D10006B091E /* README.md in Resources */,
+				4305E2CC26DA9D10006B091E /* skflyrevealloader.plist in Resources */,
+				4305E28026DA9D10006B091E /* .stamp in Resources */,
+				4305E2B426DA9D10006B091E /* com.skfly.reveal2loader-0.0.1 in Resources */,
+				4305E2B326DA9D10006B091E /* com.h4ck1n.Reveal2Loader-1.0-6 in Resources */,
+				4305E29E26DA9D10006B091E /* SkflyNetworkHelper.m.f99f8cbe.Td in Resources */,
+				4305E2A226DA9D10006B091E /* prerm in Resources */,
+				4305E2A926DA9D10006B091E /* skflyrevealloader.plist in Resources */,
+				4305E29926DA9D10006B091E /* NSData+Skfly.m.f99f8cbe.Td in Resources */,
+				4305E29D26DA9D10006B091E /* VPNService.m.f99f8cbe.Td in Resources */,
+				4305E2A626DA9D10006B091E /* control in Resources */,
+				4305E2BD26DA9D10006B091E /* prerm in Resources */,
+				4305E29826DA9D10006B091E /* SkflyLog.m.f99f8cbe.Td in Resources */,
+				4305E2AA26DA9D10006B091E /* reveal-logo@3x.png in Resources */,
+				4305E2C026DA9D10006B091E /* postrm in Resources */,
+				4305E2B226DA9D10006B091E /* com.skfly.reveal2loader-1.0-6 in Resources */,
+				4305E2D026DA9D10006B091E /* QQ20200602-023543@2x.png in Resources */,
+				4305E2C526DA9D10006B091E /* Reveal2Loader.plist in Resources */,
+				4305E28D26DA9D10006B091E /* PhotoView.m.f99f8cbe.Td in Resources */,
+				4305E2A026DA9D10006B091E /* SkflyAppHelper.m.f99f8cbe.Td in Resources */,
+				4305E2BA26DA9D10006B091E /* PackageVersion.plist in Resources */,
+				4305E29C26DA9D10006B091E /* NSString+Skfly.m.f99f8cbe.Td in Resources */,
+				4305E2B026DA9D10006B091E /* Info.plist in Resources */,
+				4305E2C226DA9D10006B091E /* Reveal2Loader.plist in Resources */,
+				4305E2A826DA9D10006B091E /* Reveal2Loader.plist in Resources */,
+				4305E2CF26DA9D10006B091E /* Info.plist in Resources */,
+				4305E28826DA9D10006B091E /* SkflyProcessHelper.m.f99f8cbe.Td in Resources */,
+				4305E2B526DA9D10006B091E /* RevealLoader-1.0-3 in Resources */,
+				4305E2A526DA9D10006B091E /* postrm in Resources */,
+				4305E2B826DA9D10006B091E /* last_package in Resources */,
+				4305E2B626DA9D10006B091E /* Reveal2Loader-1.0-3 in Resources */,
+				4305E29726DA9D10006B091E /* 越狱后可用的函数.m.f99f8cbe.Td in Resources */,
+				4305E2AC26DA9D10006B091E /* Reveal2Loader.plist in Resources */,
+				4305E27A26DA9D10006B091E /* Assets.xcassets in Resources */,
+				4305E28A26DA9D10006B091E /* SkflyUtility.m.f99f8cbe.Td in Resources */,
+				4305E28926DA9D10006B091E /* TKToast.m.f99f8cbe.Td in Resources */,
+				4305E29B26DA9D10006B091E /* SkflyDeviceInfoOp.m.f99f8cbe.Td in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "#!/bin/sh\n\n# rm -rf \"${PROJECT_DIR}/${TARGET_NAME}/Package/usr/bin/*\"\n# cp -rf \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/PalmRiskSvr\" \"${PROJECT_DIR}/${TARGET_NAME}/Package/usr/bin/\"\n\n# 自动更新deb包版本号\necho $CONFIGURATION\nif [ \"Release\" == \"${CONFIGURATION}\" ]\nthen\npackInfoPlist=\"${PROJECT_DIR}/${TARGET_NAME}/PackageVersion.plist\"\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print PackageRevision\" \"${packInfoPlist}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :PackageRevision $buildNumber\" \"${packInfoPlist}\"\necho \"build number increase\"\nfi\n";
 		};
-		C91FD475221B45D20089920A /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/opt/EasyDev/bin/ed --xcbp\n";
-		};
-/* End PBXShellScriptBuildPhase section */
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C91FD471221B45D20089920A /* Sources */ = {
+		43A967D523FAC69E00F4B981 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C91FD491221B45D30089920A /* Reveal2Loader.m in Sources */,
+				4305E2CD26DA9D10006B091E /* main.m in Sources */,
+				4305E27B26DA9D10006B091E /* ViewController.m in Sources */,
+				4305E2CE26DA9D10006B091E /* AppDelegate.m in Sources */,
+				4305E2BB26DA9D10006B091E /* Reveal2Loader.m in Sources */,
+				4305E2BC26DA9D10006B091E /* Makefile in Sources */,
+				4305E27C26DA9D10006B091E /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		4305E1EC26DA9D0F006B091E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4305E1ED26DA9D0F006B091E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4305E1EE26DA9D0F006B091E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4305E1EF26DA9D0F006B091E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		43A967F023FAC6A400F4B981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 97F6M8W3K8;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Reveal2Loader/publish_tweak/.theos/_/Library/Frameworks",
+					"$(PROJECT_DIR)/Reveal2Loader/publish_tweak/layout/Library/Frameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = Reveal2Loader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Reveal2Loader/publish_tweak/.theos/obj/debug",
+					"$(PROJECT_DIR)/Reveal2Loader/publish_tweak/.theos/obj/debug/arm64",
+					"$(PROJECT_DIR)/Reveal2Loader/publish_tweak/.theos/_/Library/MobileSubstrate/DynamicLibraries",
+					"$(PROJECT_DIR)/Reveal2Loader/publish_tweak/.theos/_/Library/Frameworks/RevealServer.framework_31",
+					"$(PROJECT_DIR)/Reveal2Loader/publish_tweak/layout/Library/Frameworks/RevealServer.framework_31",
+					"$(PROJECT_DIR)/Reveal2Loader/publish_tweak/packages",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.skfly.Reveal2Loader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		43A967F123FAC6A400F4B981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 97F6M8W3K8;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Reveal2Loader/publish_tweak/.theos/_/Library/Frameworks",
+					"$(PROJECT_DIR)/Reveal2Loader/publish_tweak/layout/Library/Frameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = Reveal2Loader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Reveal2Loader/publish_tweak/.theos/obj/debug",
+					"$(PROJECT_DIR)/Reveal2Loader/publish_tweak/.theos/obj/debug/arm64",
+					"$(PROJECT_DIR)/Reveal2Loader/publish_tweak/.theos/_/Library/MobileSubstrate/DynamicLibraries",
+					"$(PROJECT_DIR)/Reveal2Loader/publish_tweak/.theos/_/Library/Frameworks/RevealServer.framework_31",
+					"$(PROJECT_DIR)/Reveal2Loader/publish_tweak/layout/Library/Frameworks/RevealServer.framework_31",
+					"$(PROJECT_DIR)/Reveal2Loader/publish_tweak/packages",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.skfly.Reveal2Loader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		C91FD495221B45D30089920A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -276,6 +995,8 @@
 					"$(EasyDevTheosPath)/vendor/lib",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Volumes/DISK_02_USER_DATA/Users/skfly/Desktop/__SKFLY/AI/theos/theos_master_20200110/Prefix.pch;
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -315,6 +1036,8 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Volumes/DISK_02_USER_DATA/Users/skfly/Desktop/__SKFLY/AI/theos/theos_master_20200110/Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -340,91 +1063,23 @@
 			};
 			name = Debug;
 		};
-		C91FD498221B45D30089920A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					arm64e,
-				);
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = QW3A7VF8DU;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				ENABLE_BITCODE = NO;
-				EasyDevBuildPackageOnAnyBuild = NO;
-				EasyDevClearUiCacheOnInstall = NO;
-				EasyDevCopyOnBuild = NO;
-				EasyDevDeviceIP = "";
-				EasyDevDevicePort = "";
-				EasyDevInstallOnAnyBuild = 0;
-				EasyDevInstallOnProfiling = 0;
-				EasyDevUsePackageVersionPList = YES;
-				EasyDevkillProcessOnInstall = SpringBoard;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Reveal2Loader/Reveal2Loader-Prefix.pch";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(EasyDevTheosPath)/vendor/include",
-				);
-				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTS_MACCATALYST = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		C91FD499221B45D30089920A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					arm64e,
-				);
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = QW3A7VF8DU;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				ENABLE_BITCODE = NO;
-				EasyDevBuildPackageOnAnyBuild = NO;
-				EasyDevClearUiCacheOnInstall = NO;
-				EasyDevCopyOnBuild = NO;
-				EasyDevDeviceIP = "";
-				EasyDevDevicePort = "";
-				EasyDevInstallOnAnyBuild = 0;
-				EasyDevInstallOnProfiling = 0;
-				EasyDevUsePackageVersionPList = YES;
-				EasyDevkillProcessOnInstall = SpringBoard;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Reveal2Loader/Reveal2Loader-Prefix.pch";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(EasyDevTheosPath)/vendor/include",
-				);
-				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTS_MACCATALYST = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		43A967EF23FAC6A400F4B981 /* Build configuration list for PBXNativeTarget "Reveal2Loader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43A967F023FAC6A400F4B981 /* Release */,
+				43A967F123FAC6A400F4B981 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C91FD470221B45D20089920A /* Build configuration list for PBXProject "Reveal2Loader" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C91FD495221B45D30089920A /* Release */,
 				C91FD496221B45D30089920A /* Debug */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C91FD497221B45D30089920A /* Build configuration list for PBXNativeTarget "Reveal2Loader" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C91FD498221B45D30089920A /* Release */,
-				C91FD499221B45D30089920A /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
