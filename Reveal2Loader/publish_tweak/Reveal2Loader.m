@@ -25,6 +25,7 @@ static __attribute__((constructor)) void tweak_main_revealloader(int __unused ar
     {
         return;
     }
+    MyLogDebug(@"配置文件加载成功: %@",configFile);
     
     NSString *libraryPath = @"/Library/Frameworks/RevealServer_31.framework/RevealServer";
     if([[prefs objectForKey:[NSString stringWithFormat:@"RHRevealEnabled-%@", [[NSBundle mainBundle] bundleIdentifier]]] boolValue])
@@ -35,11 +36,11 @@ static __attribute__((constructor)) void tweak_main_revealloader(int __unused ar
             if(addr)
             {
                 [[NSNotificationCenter defaultCenter] postNotificationName:@"IBARevealRequestStart" object:nil];
-                NSLog(@"RevealLoader loaded %@ successed, address %p", libraryPath,addr);
+                MyLogDebug(@"RevealLoader loaded %@ successed, address %p", libraryPath,addr);
             }
             else
             {
-                NSLog(@"RevealLoader loaded %@ failed, address %p", libraryPath,addr);
+                MyLogDebug(@"RevealLoader loaded %@ failed, address %p", libraryPath,addr);
             }
         }
     }
